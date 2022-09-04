@@ -20,8 +20,9 @@
 
     --fs-1: 4.0rem;
     --fs-2: 3.2rem;
-    --fs-3: 2.4rem;
-    --fs-4: 2.0rem;
+    --fs-3: 3.2rem;
+    --fs-4: 2.4rem;
+    --fs-5: 2.0rem;
     --fs-body: 1rem;
     --fs-btn: 1.8rem;
 
@@ -129,6 +130,7 @@ h4 {
     width: 100%;
     height: 100%;
     background-image: url(../images/happy-customer1.jpeg);
+    background-repeat: none;
     background-size: 100%;
     /* opacity: 25%; */
     filter: brightness(0.4);
@@ -139,18 +141,26 @@ h4 {
     position: relative;
 }
 
-.intro__title {
+.intro__title-1 {
     /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
-    max-width: 70%;
+    max-width: 65%;
+    text-align: left;
+}
+
+.intro__title-2 {
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+    max-width: 100%;
     text-align: left;
 }
 
 .intro__description {
     color: var(--clr-light);
     text-align: center;
-    max-width: 70%;
+    max-width: 100%;
     text-align: left;
 }
 
