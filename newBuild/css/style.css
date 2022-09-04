@@ -1,0 +1,158 @@
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Custom Properties, update these for your own design */
+
+:root {
+    font-size: 10px;
+    --ff-primary: 'Source Sans Pro', sans-serif;
+    --ff-secondary: 'Source Code Pro', monospace;
+
+    --fw-reg: 300;
+    --fw-bold: 900;
+
+    --clr-light: #fff;
+    --clr-dark: #303030;
+    --clr-accent: #16e0bd;
+
+    --fs-h1: 3rem;
+    --fs-h2: 2.25rem;
+    --fs-h3: 1.25rem;
+    --fs-body: 1rem;
+
+    --bs: 0.25em 0.25em 0.75em rgba(0, 0, 0, .25),
+        0.125em 0.125em 0.25em rgba(0, 0, 0, .15);
+}
+
+@media (min-width: 800px) {
+    :root {
+        --fs-h1: 4.6rem;
+        --fs-h2: 4rem;
+        --fs-h3: 2.4rem;
+        --fs-h4: 2.1rem;
+        --fs-body: 2rem;
+        --fs-btn: 1.9rem;
+    }
+}
+
+/* General styles */
+
+/* endable this to add smooth scrolling */
+/* html {
+    scroll-behavior: smooth;
+} */
+
+body {
+    background: var(--clr-light);
+    color: var(--clr-dark);
+    margin: 0;
+    font-family: var(--ff-primary);
+    font-size: var(--fs-body);
+    line-height: 1.6;
+}
+
+section {
+    padding: 5em 2em;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+strong {
+    font-weight: var(--fw-bold)
+}
+
+:focus {
+    outline: 3px solid var(--clr-accent);
+    outline-offset: 3px;
+}
+
+/* Buttons */
+button {
+    font-size: var(--fs-btn);
+}
+
+
+/* Typography */
+h1,
+h2,
+h3 {
+    line-height: 1;
+    margin: 0;
+}
+
+h1 {
+    font-size: var(--fs-h1)
+}
+
+h2 {
+    font-size: var(--fs-h2)
+}
+
+h3 {
+    font-size: var(--fs-h3)
+}
+
+h4 {
+    font-size: var(--fs-h4);
+}
+
+/* header */
+.header {
+    margin-bottom: 3rem;
+}
+
+/*  Intro section  */
+/* .intro {
+    background-color: var(--clr-dark);
+ Below is fullscreen background image
+    background-image: url(../images/happy-customer1.jpeg);
+    border: none;
+    background-size: cover;
+} */
+.intro {
+    position: relative;
+}
+
+.intro::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url(../images/happy-customer1.jpeg);
+    background-size: 100%;
+    /* opacity: 25%; */
+    filter: brightness(0.4);
+    /* filter: grayscale(100%); */
+}
+
+.intro__psuedo-bg__inside {
+    position: relative;
+}
+
+.intro__title {
+    /* background-blend-mode: multiply; */
+    color: var(--clr-light);
+    text-align: center;
+    max-width: 70%;
+    text-align: left;
+}
+
+.intro__description {
+    color: var(--clr-light);
+    text-align: center;
+    max-width: 70%;
+    text-align: left;
+}
+
+
+
+
+/*  Problem section  */
