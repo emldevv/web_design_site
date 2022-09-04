@@ -106,7 +106,7 @@ h4 {
 
 /* header */
 .header {
-    margin-bottom: 3rem;
+    position: relative;
 }
 
 /*  Intro section  */
