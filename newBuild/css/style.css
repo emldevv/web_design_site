@@ -107,7 +107,8 @@ h4 {
 
 /* header */
 .header {
-    position: relative;
+    min-height: 2rem;
+    background-color: var(--clr-dark);
 }
 
 /*  Intro section  */
@@ -120,6 +121,7 @@ h4 {
 } */
 .intro {
     position: relative;
+    background-color: var(--clr-dark);
 }
 
 .intro::before {
@@ -130,11 +132,15 @@ h4 {
     width: 100%;
     height: 100%;
     background-image: url(../images/happy-customer1.jpeg);
-    background-repeat: none;
+    background-repeat: no-repeat;
     background-size: 100%;
     /* opacity: 25%; */
     filter: brightness(0.4);
     /* filter: grayscale(100%); */
+}
+
+.intro__psuedo-bg {
+    background-color: var(--clr-dark);
 }
 
 .intro__psuedo-bg__inside {
@@ -147,10 +153,12 @@ h4 {
     text-align: center;
     max-width: 65%;
     text-align: left;
+    line-height: 4.5rem;
 }
 
 .intro__title-2 {
     /* background-blend-mode: multiply; */
+    margin-top: 2rem;
     color: var(--clr-light);
     text-align: center;
     max-width: 100%;
@@ -158,12 +166,16 @@ h4 {
 }
 
 .intro__description {
+    margin-top: 8rem;
     color: var(--clr-light);
     text-align: center;
     max-width: 100%;
     text-align: left;
 }
 
+.intro__description span {
+    color: var(--clr-accent);
+}
 
 
 
