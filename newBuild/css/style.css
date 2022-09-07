@@ -95,6 +95,20 @@ button {
     font-size: var(--fs-btn);
 }
 
+.btn {
+    display: inline-block;
+    padding: .5em 2.5em;
+    background: var(--clr-accent);
+    color: var(--clr-dark);
+    text-decoration: none;
+    cursor: pointer;
+    font-size: var(--fs-btn);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: var(--fw-bold);
+    transition: transform 200ms ease-in-out;
+}
+
 
 /* Typography */
 h1,
@@ -206,6 +220,21 @@ p {
     line-height: 2.6rem;
 }
 
+/* Value section one */
+.section__value {
+    box-shadow:
+        0.35em 0.35em 0.85em rgba(22, 224, 189, .55),
+        0.135em 0.135em 0.35em rgba(0, 0, 0, .35);
+    padding: 2rem;
+    background-color: rgb(211, 211, 211);
+    text-align: center;
+}
+
+.section__value+.section__value {
+    margin-top: 3rem;
+}
+
+/* Solution section */
 .section__problem--img {
     box-shadow: var(--bs);
 }
@@ -239,18 +268,10 @@ p {
     padding: 2rem;
 }
 
-/* .service__title1 {
-    color: hsl(170, 82%, 80%);
-}
-
-.service__title2 {
-    color: hsl(170, 82%, 64%);
-}
-
-.service__title3 {
-    color: hsl(170, 82%, 48%);
-} */
-
 .service__description {
     font: var(--ff-primary);
+}
+
+.section__solution-btn {
+    margin-top: 3rem;
 }
