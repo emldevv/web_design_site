@@ -19,10 +19,21 @@
 
 <body>
     <main class="main">
-        <header class="header">
+        <header>
             <div class="logo">
                 <img src="images/logo.png" alt="">
             </div>
+            <button class="nav-toggle" aria-label="toggle navigation">
+                <span class="hamburger"></span>
+            </button>
+            <nav class="nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__link">My Services</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__link">About me</a></li>
+                    <li class="nav__item"><a href="#work" class="nav__link">My Work</a></li>
+                </ul>
+            </nav>
         </header>
         <section class="intro">
             <div class="intro__psuedo-bg">
@@ -32,8 +43,8 @@
                 </div>
             </div>
             <h4 class="intro__description">
-                We help service-based businesses <span>stand out</span> by clarifying and directing their website
-                marketing strategy.
+                I help service-based businesses <span>stand out</span> through clear and targeted web content and
+                strategy.
             </h4>
         </section>
         <!-- <section class="value">
@@ -55,9 +66,9 @@
                     Looking for the right words to connect with your customers?
                 </h1>
                 <p class="section__problem--body">
-                    Are you communicating your value to customers in language they can understand? Losing online
-                    customers can quickly evolve from frustrating to draining. Transform your website from business
-                    card to 24/7 salesperson with our targeted and clear web content, copy and design.
+                    Are you communicating your value to customers in language they can understand? Has losing online
+                    customers evolved from frustrating to draining yet? Transform your website from business
+                    card to 24/7 salesperson with targeted and clear web content, copy and design.
                 </p>
                 <img class="section__problem--img" src="./images/frustrated.jpeg" alt="frustrated business owner">
             </div>
@@ -78,7 +89,7 @@
         <section class="solution">
             <h1 class="section__title section__title--solution">
                 <!-- How we make your website a clear and obvious choice for customers -->
-                How we make your business a clear and obvious choice for customers
+                How I make your business a clear and obvious choice for customers
                 <!-- Lets make your business an obvious choice for customers with: -->
                 <!-- Get back to taking care of customers and growing your business with one of our solutions -->
             </h1>
@@ -98,16 +109,24 @@
                 <div class="service">
                     <h3 class="service__title service__title3">Complete Website Content & Design</h3>
                     <p class="service__description">
-                        Apply the customer-focused content across your whole website, letting customers know they are in
+                        Apply customer-focused content across your whole website, letting them know they are in
                         the right place with the right people.
                     </p>
                 </div>
                 <a href="#" class="btn section__solution-btn">Our Services</a>
             </div>
         </section>
-        </section>
         <section class="why-work">
             <div class="section__why-work">
+                <h1 class="section__title section__title--why-work">What makes this website guy different?</h1>
+                <p class="section__why-work--body">I understand that trying to communicate your value to customers is a
+                    complex task, and becomes stressful if they are slipping through your website's fingers.
+                </p>
+                <p class="section__why-work--body">My goal is to relieve that stress for your business by simplify
+                    and aligning your brand message to resonate with your customers, in a way that presents beautifully
+                    on your website. If you're ready to transform your website with a strong marketing foundation that
+                    delivers cutomers to you, schedule a call so we can talk details.
+                </p>
             </div>
         </section>
         <section class="who-for">
@@ -126,7 +145,31 @@
             <div class="section__final-call">
             </div>
         </section>
-        <footer>
+        <footer class="footer">
+            <!-- replace with your own email address -->
+            <a href="mailto:hello@jane.dev" class="footer__link">hello@matt.dev</a>
+            <ul class="social-list">
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://codepen.io">
+                        <i class="fab fa-codepen"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="http://dribbble.com">
+                        <i class="fab fa-dribbble"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://twitter.com">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="social-list__item">
+                    <a class="social-list__link" href="https://github.com">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
         </footer>
     </main>
     <script src="js/index.js"></script>
