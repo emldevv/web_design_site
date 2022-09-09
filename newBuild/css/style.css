@@ -39,7 +39,7 @@
         --fs-1: 4.6rem;
         --fs-2: 3.8rem;
         --fs-3: 3.6rem;
-        --fs-4: 2.0rem;
+        --fs-4: 3.0rem;
         --fs-body: 2.1rem;
         --fs-btn: 1.9rem;
     }
@@ -340,6 +340,7 @@ header {
     font-weight: var(--fw-bold);
     color: var(--clr-neutral);
     line-height: 2.6rem;
+    margin: 3rem 0;
 }
 
 /* Value section one */
@@ -396,6 +397,11 @@ header {
 
 .section__solution-btn {
     margin-top: 3rem;
+}
+
+/* Why Work Section */
+.section__why-work--body {
+    margin: 3rem 0;
 }
 
 /* footer */
