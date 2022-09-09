@@ -274,7 +274,7 @@ header {
     height: 100%;
     background-image: url(../images/happy-customer1.jpeg);
     background-repeat: no-repeat;
-    background-size: 100%;
+    background-size: cover;
     /* opacity: 25%; */
     filter: brightness(0.4);
     /* filter: grayscale(100%); */
@@ -289,7 +289,6 @@ header {
 }
 
 .intro__title-1 {
-    /* background-blend-mode: multiply; */
     color: var(--clr-light);
     text-align: center;
     max-width: 65%;
@@ -299,7 +298,6 @@ header {
 }
 
 .intro__title-2 {
-    /* background-blend-mode: multiply; */
     margin-top: 4rem;
     color: var(--clr-accent);
     text-align: center;
@@ -308,23 +306,32 @@ header {
     text-shadow: var(--bs);
 }
 
-.intro__description {
-    /* margin-top: 8rem; */
-    margin-top: 8rem;
-    color: var(--clr-light);
-    text-align: center;
-    max-width: 100%;
-    align-self: bottom;
-
+.intro-description {
+    background-color: var(--clr-dark);
 }
 
-@media (min-width: 440px) {
+.intro-description__description {
+    /* margin-top: 8rem; */
+    /* margin-top: 8rem; */
+    color: var(--clr-light);
+    background-color: var(--clr-dark);
+    text-align: center;
+    max-width: 100%;
+}
+
+/* @media (min-width: 400px) {
     .intro__description {
         margin-top: 13rem;
     }
 }
 
-.intro__description span {
+@media (min-width: 475px) {
+    .intro__description {
+        margin-top: 20rem;
+    }
+} */
+
+.intro-description__description span {
     color: var(--clr-accent);
 }
 
